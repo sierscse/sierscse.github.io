@@ -1,0 +1,58 @@
+html {
+  font-size: 16px;
+}
+
+/* NOTE: Header */
+
+header img {
+  width: 3.125rem;
+  padding: 0;
+  border-radius: 5px;
+}
+
+/* NOTE: Jumbotron */
+
+.jumbotron-fluid {
+  padding-top: 10rem;
+  height: 44rem;
+  background-image: url('../../resources/images/eric-froehling-311483.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  text-align: center;
+  color: white;
+}
+
+/* NOTE: Featured Projects */
+#projects {
+  margin-top: 3rem;
+}
+
+#projects .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* NOTE: other projects */
+
+#other-projects {
+  margin-top: 3rem;
+}
+
+/* NOTE: About section */
+
+#about {
+  margin-top: 3rem;
+}
+
+
+/* NOTE: Footer */
+
+#contact {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
