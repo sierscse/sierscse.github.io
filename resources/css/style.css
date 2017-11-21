@@ -2,19 +2,66 @@ html {
   font-size: 16px;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2  {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+@media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
+main {
+  position: relative;
+  top: 3.125rem;
+}
 /* NOTE: Header */
 
-header img {
+
+.navbar-brand.navbar-right.collapse.navbar-collapse {
   width: 3.125rem;
+  height: auto;
   padding: 0;
-  border-radius: 5px;
+  border-radius: .75rem;
 }
+/* NOTE: having issue with mystery border when emulator is 320px (iphone 5)
+i've tried many, many things but no luck. Will come back to it later. Try more
+media querries. NOTE also try adjusting footer
+
+@media only screen and (max-width: 320px) {
+  .navbar-nav {
+    max-width: 320px;
+    margin: 0;
+    padding-right: 0;
+  }
+  .container-fluid {
+    max-width: 320px;
+    box-sizing: border-box;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .navbar.navbar-default.navbar-fixed-top {
+    max-width: 320px;
+  }
+}
+*/
 
 /* NOTE: Jumbotron */
 
 .jumbotron-fluid {
   padding-top: 10rem;
-  height: 44rem;
+  height: 30rem;
   background-image: url('../../resources/images/eric-froehling-311483.jpg');
   background-size: cover;
   background-position: center;
@@ -45,11 +92,33 @@ header img {
 #about {
   margin-top: 3rem;
 }
+/* NOTE: Contact Information */
 
+#contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  margin: 2rem 0 5rem 2rem;
+}
+
+#contact img{
+  width: 100px;
+  margin-right: 3rem;
+  border-radius: 5px;
+}
+
+#contact a {
+  margin-right: 0.25rem;
+}
 
 /* NOTE: Footer */
 
-#contact {
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
   margin-top: 3rem;
   display: flex;
   justify-content: space-around;
