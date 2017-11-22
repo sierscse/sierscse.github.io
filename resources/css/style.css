@@ -25,6 +25,7 @@ main {
   position: relative;
   top: 3.125rem;
 }
+
 /* NOTE: Header */
 
 
@@ -34,29 +35,17 @@ main {
   padding: 0;
   border-radius: .75rem;
 }
-/* NOTE: having issue with mystery border when emulator is 320px (iphone 5)
-i've tried many, many things but no luck. Will come back to it later. Try more
-media querries. NOTE also try adjusting footer
 
-@media only screen and (max-width: 320px) {
-  .navbar-nav {
-    max-width: 320px;
-    margin: 0;
-    padding-right: 0;
-  }
-  .container-fluid {
-    max-width: 320px;
-    box-sizing: border-box;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .navbar.navbar-default.navbar-fixed-top {
-    max-width: 320px;
-  }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #399bd1;
+  font-weight: bold;
 }
-*/
 
+#home img {
+margin-right: 0.25rem;
+}
 /* NOTE: Jumbotron */
 
 .jumbotron-fluid {
@@ -112,16 +101,41 @@ media querries. NOTE also try adjusting footer
   margin-right: 0.25rem;
 }
 
+@media only screen and (max-width: 470px) {
+  #contact {
+    margin: 2rem 1rem;
+  }
+
+  #contact img{
+    margin-right: 1rem;
+  }
+}
+
 /* NOTE: Footer */
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 5rem;
   margin-top: 3rem;
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
+  background-color: #7B8F97;
   color: white;
+  padding: 1rem;
+  position: relative;
+  top: 3rem;
+}
+
+footer a {
+  padding: 0 1rem;
+  color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    font-size: 0.75rem;
+  }
+  footer a {
+    padding: 0 0.25rem;
+  }
 }
