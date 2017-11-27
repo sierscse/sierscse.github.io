@@ -101,6 +101,10 @@ margin-right: 0.25rem;
   margin-right: 0.25rem;
 }
 
+#contact i {
+  color: black;
+}
+
 @media only screen and (max-width: 470px) {
   #contact {
     margin: 2rem 1rem;
