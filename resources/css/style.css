@@ -92,7 +92,7 @@ margin-right: 0.25rem;
 }
 
 #contact img{
-  width: 100px;
+  width: 125px;
   margin-right: 3rem;
   border-radius: 5px;
 }
@@ -103,6 +103,11 @@ margin-right: 0.25rem;
 
 #contact i {
   color: black;
+  margin-right: 1rem;
+}
+
+#contact h3 {
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 470px) {
