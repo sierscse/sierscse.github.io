@@ -81,6 +81,11 @@ margin-right: 0.25rem;
 #about {
   margin-top: 3rem;
 }
+
+#about h3 {
+  margin-bottom: 1rem;
+}
+
 /* NOTE: Contact Information */
 
 #contact {
